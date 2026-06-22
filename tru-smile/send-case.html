@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Send Your Case | Tru-Smile Dental Lab</title>
+  <meta name="description" content="Send your dental case to Tru-Smile Dental Lab via digital scanner or analog impression. Complimentary pickup across Canada." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+  <header class="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/bluelogo.png" alt="Tru-Smile Dental Lab" /></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="solutions.html">Our Solutions</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="send-case.html" class="btn-nav active">Send Your Case</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+      <a href="solutions.html">Our Solutions</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="send-case.html" class="btn-nav">Send Your Case</a>
+    </nav>
+  </header>
+
+  <main class="page-offset">
+
+    <!-- HERO — fixed object-position so subject is visible -->
+    <section class="send-hero" aria-label="Send Your Case hero">
+      <!-- IMAGE: assets/cases.png -->
+      <img src="assets/cases.png" alt="Tru-Smile case handoff" />
+      <div class="send-hero-overlay">
+        <div class="send-hero-text">
+          <h1>Your Workflow, Your Choice.</h1>
+          <p>We accept both digital and analog cases.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="send-subtext"><p>Connect with us or call us to arrange a pickup.</p></div>
+
+    <!-- WORKFLOW CARDS -->
+    <section class="workflow-section">
+      <div class="workflow-inner">
+
+        <div class="workflow-card">
+          <p class="workflow-type">DIGITAL WORKFLOW</p>
+          <h2>Connect Your Scanner</h2>
+          <p>Call us to connect or send cases directly from your intraoral scanner. We accept files from all scanners.</p>
+          <p>Don't see your scanner listed? We will make it work.</p>
+          <div class="workflow-contact">
+            <a href="mailto:digital@tru-smile.ca">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              Digital@tru-smile.ca
+            </a>
+          </div>
+          <div class="scanner-carousel" aria-label="Supported scanners">
+            <div class="scanner-track" aria-hidden="true">
+              <span class="scanner-tag">Straumann AXS</span>
+              <span class="scanner-tag">DS Core</span>
+              <span class="scanner-tag">Sirona/Cerec</span>
+              <span class="scanner-tag">Medit Link</span>
+              <span class="scanner-tag">3Shape</span>
+              <span class="scanner-tag">iTero</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="workflow-card">
+          <p class="workflow-type">ANALOG WORKFLOW</p>
+          <h2>Analog Impression</h2>
+          <p>Prefer traditional impressions? Download and complete the Rx form and include it with your case, or simply fill out the form below. Complimentary pickup and delivery are available across Canada.</p>
+          <div class="workflow-contact">
+            <a href="mailto:contact-us@tru-smile.ca">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              Contact-us@tru-smile.ca
+            </a>
+            <a href="tel:+18669927958">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              +1 (866) 992 - 7985
+            </a>
+          </div>
+          <!-- Download Rx — assets/rxdownload.pdf -->
+          <a href="assets/rxdownload.pdf" download class="btn btn-outline">&darr; Download Rx</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CASE SUBMISSION FORM — Formspree -->
+    <section class="send-form-section">
+      <div class="container">
+        <div class="send-form-card">
+          <h2>Submit Your Case</h2>
+          <!--
+            FORMSPREE INTEGRATION
+            ─────────────────────────────────────────────────────────
+            Endpoint: https://formspree.io/f/xkolnqba
+            Primary recipient: digital@tru-smile.ca
+            Subject: Website Case Submission - [Clinic Name]  (set in script.js)
+
+            CC NOTE — dana.fraij@tru-smile.ca:
+            Formspree free/basic plans do not support CC natively.
+            To CC dana.fraij@tru-smile.ca, use ONE of these options:
+              Option A — Formspree dashboard > Form Settings > Notifications
+                         > Add dana.fraij@tru-smile.ca as extra recipient.
+              Option B — Set up a forwarding rule on digital@tru-smile.ca
+                         to automatically forward all messages to dana.fraij@tru-smile.ca.
+
+            Submission handled entirely in script.js (async fetch, no page reload).
+            Success / error messages shown below the form buttons.
+            ─────────────────────────────────────────────────────────
+          -->
+          <form id="caseForm" novalidate aria-label="Case submission form" enctype="multipart/form-data">
+
+            <p class="form-section-title">Clinic Information</p>
+            <div class="form-row">
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="clinic_name">Clinic Name<span class="req">*</span></label>
+                <input type="text" id="clinic_name" name="clinic_name" placeholder="Clinic or practice name" required autocomplete="organization" />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="dentist_name">Dentist Name<span class="req">*</span></label>
+                <input type="text" id="dentist_name" name="dentist_name" placeholder="Dr. Full Name" required autocomplete="name" />
+              </div>
+            </div>
+            <div class="form-row" style="margin-top:20px;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="phone">Phone Number<span class="req">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (___) ___-____" required autocomplete="tel" />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="email">Email Address<span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-group" style="margin-top:20px;">
+              <label for="clinic_address">Clinic Address<span class="req">*</span></label>
+              <input type="text" id="clinic_address" name="clinic_address" placeholder="Street, city, province, postal code" required autocomplete="street-address" />
+            </div>
+
+            <p class="form-section-title">Patient Information</p>
+            <div class="form-row">
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="patient_name">Patient Name<span class="req">*</span></label>
+                <input type="text" id="patient_name" name="patient_name" placeholder="Patient full name" required />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="gender">Gender</label>
+                <div class="select-wrapper">
+                  <select id="gender" name="gender">
+                    <option value="" disabled selected>Select gender</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Other/Prefer not to say">Other / Prefer not to say</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-row" style="margin-top:20px;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="due_date">Due Date<span class="req">*</span></label>
+                <input type="date" id="due_date" name="due_date" required />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="case_type">Case Type</label>
+                <div class="select-wrapper">
+                  <select id="case_type" name="case_type">
+                    <option value="" disabled selected>Select case type</option>
+                    <option>Crown &amp; Bridge</option>
+                    <option>Implant</option>
+                    <option>Denture</option>
+                    <option>Partial</option>
+                    <option>Night Guard</option>
+                    <option>Orthodontic Appliance</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <p class="form-section-title">Case Details</p>
+            <div class="form-row">
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="restoration_type">Restoration / Appliance Type</label>
+                <input type="text" id="restoration_type" name="restoration_type" placeholder="e.g. Full Contour Zirconia Crown" />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="material">Material</label>
+                <input type="text" id="material" name="material" placeholder="e.g. Zirconia, E-max, Acrylic" />
+              </div>
+            </div>
+            <div class="form-row" style="margin-top:20px;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="pontic_design">Pontic Design</label>
+                <input type="text" id="pontic_design" name="pontic_design" placeholder="e.g. Modified Ridge Lap" />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="shade_notes">Shade Notes</label>
+                <input type="text" id="shade_notes" name="shade_notes" placeholder="e.g. A2, Vita shade guide" />
+              </div>
+            </div>
+
+            <p class="form-section-title">Tooth Selection</p>
+            <input type="hidden" id="upper_teeth" name="upper_teeth" />
+            <input type="hidden" id="lower_teeth" name="lower_teeth" />
+            <div class="tooth-chart-section">
+              <p class="tooth-chart-label">Upper Teeth (1&ndash;16) &mdash; click to select</p>
+              <div class="tooth-grid upper-teeth">
+                <button type="button" class="tooth-btn" data-tooth="1">1</button><button type="button" class="tooth-btn" data-tooth="2">2</button><button type="button" class="tooth-btn" data-tooth="3">3</button><button type="button" class="tooth-btn" data-tooth="4">4</button><button type="button" class="tooth-btn" data-tooth="5">5</button><button type="button" class="tooth-btn" data-tooth="6">6</button><button type="button" class="tooth-btn" data-tooth="7">7</button><button type="button" class="tooth-btn" data-tooth="8">8</button><button type="button" class="tooth-btn" data-tooth="9">9</button><button type="button" class="tooth-btn" data-tooth="10">10</button><button type="button" class="tooth-btn" data-tooth="11">11</button><button type="button" class="tooth-btn" data-tooth="12">12</button><button type="button" class="tooth-btn" data-tooth="13">13</button><button type="button" class="tooth-btn" data-tooth="14">14</button><button type="button" class="tooth-btn" data-tooth="15">15</button><button type="button" class="tooth-btn" data-tooth="16">16</button>
+              </div>
+            </div>
+            <div class="tooth-chart-section" style="margin-top:16px;">
+              <p class="tooth-chart-label">Lower Teeth (17&ndash;32) &mdash; click to select</p>
+              <div class="tooth-grid lower-teeth">
+                <button type="button" class="tooth-btn" data-tooth="17">17</button><button type="button" class="tooth-btn" data-tooth="18">18</button><button type="button" class="tooth-btn" data-tooth="19">19</button><button type="button" class="tooth-btn" data-tooth="20">20</button><button type="button" class="tooth-btn" data-tooth="21">21</button><button type="button" class="tooth-btn" data-tooth="22">22</button><button type="button" class="tooth-btn" data-tooth="23">23</button><button type="button" class="tooth-btn" data-tooth="24">24</button><button type="button" class="tooth-btn" data-tooth="25">25</button><button type="button" class="tooth-btn" data-tooth="26">26</button><button type="button" class="tooth-btn" data-tooth="27">27</button><button type="button" class="tooth-btn" data-tooth="28">28</button><button type="button" class="tooth-btn" data-tooth="29">29</button><button type="button" class="tooth-btn" data-tooth="30">30</button><button type="button" class="tooth-btn" data-tooth="31">31</button><button type="button" class="tooth-btn" data-tooth="32">32</button>
+              </div>
+            </div>
+
+            <p class="form-section-title">Description &amp; Instructions</p>
+            <div class="form-group">
+              <label for="case_description">Case Description<span class="req">*</span></label>
+              <textarea id="case_description" name="case_description" placeholder="Describe the case in detail..." required style="min-height:120px;"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="further_instructions">Further Instructions</label>
+              <textarea id="further_instructions" name="further_instructions" placeholder="Any additional notes for the lab..." style="min-height:100px;"></textarea>
+            </div>
+
+            <p class="form-section-title">File Upload</p>
+            <div class="form-group">
+              <label for="case_files">Attach Files (STL, PLY, PDF, JPG, PNG)</label>
+              <div class="file-upload-area">
+                <input type="file" id="case_files" name="case_files" accept=".stl,.ply,.pdf,.jpg,.jpeg,.png" multiple />
+                <div class="upload-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg></div>
+                <p>Drag &amp; drop files here, or click to browse</p>
+                <small>STL, PLY, PDF, JPG, PNG &mdash; Max 25 MB per file</small>
+              </div>
+            </div>
+
+            <p class="form-section-title">Submission Details</p>
+            <div class="form-row">
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="rx_date">Rx Date<span class="req">*</span></label>
+                <!-- Auto-filled with today's date by script.js -->
+                <input type="date" id="rx_date" name="rx_date" required />
+              </div>
+            </div>
+
+            <div class="consent-group">
+              <input type="checkbox" id="consent" name="consent" required />
+              <label for="consent">I confirm that the submitted information is accurate and I authorize Tru-Smile Dental Lab to process this case.</label>
+            </div>
+
+            <!-- SUCCESS / ERROR messages rendered here by script.js -->
+            <div class="form-msg" role="alert" aria-live="polite"></div>
+
+            <div class="form-actions">
+              <button type="button" class="btn-cancel">CANCEL</button>
+              <button type="submit" class="btn btn-primary">SUBMIT</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER — identical across all pages -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" aria-label="Tru-Smile Dental Lab Home">
+          <img src="assets/whitelogo.png" alt="Tru-Smile Dental Lab" class="footer-logo" />
+        </a>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/trusmilelab?" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/trusmilelab.inc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path fill="var(--navy-dark)" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/trusmile-dental-lab-inc/about/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@trusmilelab.inc?_r=1&amp;_t=ZS-97QWh86qzVU" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+          </a>
+        </div>
+        <div class="footer-contact">
+          <a href="https://maps.app.goo.gl/HxT9MQvU7h2k9U4Y7?g_st=i&amp;utm_campaign=ac-im" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            2550 Argentia Rd, Suite 218<br />Mississauga, Ontario L5N 5R1
+          </a>
+          <a href="mailto:contact-us@tru-smile.ca">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Contact-us@tru-smile.ca
+          </a>
+          <a href="tel:+18669927958">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            +1 (866) 992-7958
+          </a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <nav class="footer-nav" aria-label="Solutions">
+          <h4>Our Solutions</h4>
+          <ul>
+            <li><a href="solutions.html">All Solutions</a></li>
+            <li><a href="solutions.html#implant-crown-bridge">Fixed Restorations</a></li>
+            <li><a href="solutions.html#dentures-partials">Removable Appliance</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-label="Company">
+          <h4>Send Your Case</h4>
+          <ul>
+            <li><a href="send-case.html">Send Your Case</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-hours">
+        <h4>Working Hours</h4>
+        <ul>
+          <li><strong>Monday &ndash; Friday</strong>8:30 am &ndash; 6:00 pm</li>
+          <li><strong>Saturday &amp; Sunday</strong>We continue to accept cases throughout the weekend. Pickups and case arrangements available upon request.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <span class="copy-year"></span> Tru-Smile Dental Lab Inc. All rights reserved.</p>
+      <p class="footer-tagline">ONE TRU-SMILE AT A TIME</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
